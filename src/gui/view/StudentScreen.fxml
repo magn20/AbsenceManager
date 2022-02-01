@@ -23,11 +23,6 @@
             <Button layoutX="14.0" layoutY="423.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Forgot Login?" />
             <Label layoutX="123.0" layoutY="275.0" text="We are the best absence program" />
             <Label layoutX="133.0" layoutY="293.0" text="for students all over the world" />
-            <Label layoutX="162.0" layoutY="81.0" text="CBS COPENHAGEN">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
          </children>
       </AnchorPane>
       <Button layoutX="14.0" layoutY="24.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: rgb(94,150,94); -fx-blend-mode: outset; -fx-border-color: green;" text="Teacher" />
