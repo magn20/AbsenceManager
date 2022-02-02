@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -13,6 +17,17 @@
                   <Font name="Cooper Black" size="42.0" />
                </font>
             </Label>
+            <ComboBox layoutX="29.0" layoutY="100.0" prefHeight="26.0" prefWidth="70.0" promptText="Class" />
+            <ComboBox layoutX="117.0" layoutY="100.0" prefHeight="26.0" prefWidth="82.0" promptText="Subject" />
+            <ComboBox layoutX="213.0" layoutY="100.0" prefHeight="26.0" prefWidth="92.0" promptText="Student" />
+            <Button layoutX="346.0" layoutY="100.0" mnemonicParsing="false" text="Check" />
+            <TableView layoutX="29.0" layoutY="131.0" prefHeight="310.0" prefWidth="369.0">
+              <columns>
+                <TableColumn prefWidth="163.20001220703125" text="Student" />
+                <TableColumn prefWidth="113.60003662109375" text="Hours" />
+                  <TableColumn prefWidth="90.39998779296877" text="Procent" />
+              </columns>
+            </TableView>
          </children>
       </AnchorPane>
       <Label layoutX="471.0" layoutY="550.0" text="ABM">
