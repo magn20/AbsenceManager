@@ -3,7 +3,6 @@ package gui.Controller;
 import gui.util.SceneSwapper;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -17,12 +16,12 @@ public class LoginController {
 
     public TextField lblUsername;
     public TextField lblPassword;
-    public ImageView picLogo;
+    public ImageView imgBackground;
+    public AnchorPane anchorpaneBackground;
 
     public LoginController(){
 
-        assert false;
-        picLogo.setImage(new Image("gui/Images/logo.png"));
+
 
     }
 

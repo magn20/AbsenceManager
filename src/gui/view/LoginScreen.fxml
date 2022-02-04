@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.LoginController">
+<AnchorPane fx:id="anchorpaneBackground" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" stylesheets="@../css/StyleSheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.LoginController">
    <children>
-      <AnchorPane layoutX="93.0" layoutY="50.0" prefHeight="462.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-blend-mode: overlay; -fx-border-width: 2;">
+      <AnchorPane layoutX="93.0" layoutY="50.0" prefHeight="462.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-blend-mode: overlay; -fx-border-width: 2;" stylesheets="@../css/StyleSheet.css">
          <children>
             <Label layoutX="29.0" layoutY="31.0" text="Absence Manager">
                <font>
@@ -39,10 +39,9 @@
          </font>
       </Label>
       <Label layoutX="520.0" layoutY="560.0" text="Enterprise" />
-      <ImageView blendMode="SCREEN" fitHeight="611.0" fitWidth="600.0">
+      <ImageView fx:id="imgBackground" fitHeight="150.0" fitWidth="487.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Downloads/macOS-Big-Sur-Login-Screen-Background-Image.png" />
-         </image>
-      </ImageView>
+            <Image url="@../img/logo.png" />
+         </image></ImageView>
    </children>
 </AnchorPane>
