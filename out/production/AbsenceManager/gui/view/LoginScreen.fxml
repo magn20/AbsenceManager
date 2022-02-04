@@ -5,30 +5,22 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.LoginController">
    <children>
-      <AnchorPane layoutX="93.0" layoutY="50.0" prefHeight="462.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-blend-mode: overlay; -fx-border-width: 2;">
+      <AnchorPane layoutX="93.0" layoutY="39.0" prefHeight="473.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-blend-mode: overlay; -fx-border-width: 2;">
          <children>
-            <Label layoutX="29.0" layoutY="31.0" text="Absence Manager">
-               <font>
-                  <Font name="Cooper Black" size="42.0" />
-               </font>
-            </Label>
             <TextField fx:id="lblUsername" layoutX="137.0" layoutY="158.0" promptText="Username" style="-fx-border-style: outset; -fx-border-width: 1; -fx-border-color: green;" />
             <Button layoutX="319.0" layoutY="158.0" mnemonicParsing="false" onAction="#onLoginBtn" style="-fx-blend-mode: outset; -fx-border-width: 1; -fx-border-color: green;" text="Login" />
             <CheckBox layoutX="155.0" layoutY="242.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="116.0" text="Remember login" />
             <Button layoutX="14.0" layoutY="423.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Forgot Login?" />
             <Label layoutX="123.0" layoutY="275.0" text="We are the best absence program" />
             <Label layoutX="133.0" layoutY="293.0" text="for students all over the world" />
-            <Label layoutX="162.0" layoutY="81.0" text="CBS COPENHAGEN">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
             <PasswordField fx:id="lblPassword" layoutX="137.0" layoutY="196.0" prefHeight="26.0" prefWidth="151.0" promptText="Password" style="-fx-blend-mode: outset; -fx-border-radius: 1; -fx-border-color: green;" />
+            <ImageView fx:id="picLogo" fitHeight="150.0" fitWidth="200.0" layoutX="113.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </AnchorPane>
       <Label layoutX="471.0" layoutY="550.0" text="ABM">
