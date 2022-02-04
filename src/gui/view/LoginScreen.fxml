@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorpaneBackground" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" stylesheets="@../css/StyleSheet.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.LoginController">
+<AnchorPane fx:id="anchorpaneBackground" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" stylesheets="@../css/StyleSheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.LoginController">
    <children>
       <AnchorPane layoutX="93.0" layoutY="50.0" prefHeight="462.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-blend-mode: overlay; -fx-border-width: 2;" stylesheets="@../css/StyleSheet.css" />
       <Label layoutX="500.0" layoutY="555.0" text="FT" AnchorPane.bottomAnchor="10.600000000000001" AnchorPane.rightAnchor="76.0">
@@ -29,7 +29,7 @@
       <CheckBox layoutX="248.0" layoutY="291.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="116.0" text="Remember login" AnchorPane.topAnchor="291.0" />
       <Button layoutX="104.0" layoutY="474.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Forgot Login?" AnchorPane.bottomAnchor="100.4" />
       <Label layoutX="216.0" layoutY="322.0" text="We are the best absence program" AnchorPane.topAnchor="322.0" />
-      <Label layoutX="226.0" layoutY="340.0" text="for students all over the world" AnchorPane.topAnchor="322.0" />
+      <Label layoutX="230.0" layoutY="340.0" text="for students all over the world" AnchorPane.topAnchor="340.0" />
       <PasswordField fx:id="lblPassword" layoutX="230.0" layoutY="241.0" prefHeight="26.0" prefWidth="151.0" promptText="Password" style="-fx-blend-mode: outset; -fx-border-radius: 1; -fx-border-color: green;" AnchorPane.topAnchor="241.0" />
       <ImageView disable="true" fitHeight="107.0" fitWidth="179.0" layoutX="216.0" layoutY="85.0" AnchorPane.topAnchor="85.0">
          <image>
