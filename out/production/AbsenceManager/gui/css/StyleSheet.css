@@ -1,9 +1,5 @@
 
-#imgBackground {
 
-    -fx-background-image: url("../img/logo.png");
-
-}
 .button{
     -fx-background-color: pink;
 }
