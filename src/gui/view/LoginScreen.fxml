@@ -13,33 +13,28 @@
 <AnchorPane fx:id="anchorpaneBackground" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" stylesheets="@../css/StyleSheet.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.LoginController">
    <children>
       <AnchorPane layoutX="93.0" layoutY="50.0" prefHeight="462.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-blend-mode: overlay; -fx-border-width: 2;" stylesheets="@../css/StyleSheet.css" />
-      <Label layoutX="471.0" layoutY="550.0" text="ABM">
+      <Label layoutX="500.0" layoutY="555.0" text="FT" AnchorPane.bottomAnchor="10.600000000000001" AnchorPane.rightAnchor="76.0">
          <font>
             <Font size="23.0" />
          </font>
       </Label>
-      <Label layoutX="520.0" layoutY="560.0" text="Enterprise" />
+      <Label layoutX="520.0" layoutY="560.0" text="Enterprise" AnchorPane.bottomAnchor="15.600000000000001" AnchorPane.rightAnchor="20.0" />
       <ImageView blendMode="OVERLAY" fitHeight="600.0" fitWidth="600.0">
          <image>
             <Image url="@../img/logo.png" />
          </image>
       </ImageView>
-      <Label layoutX="122.0" layoutY="65.0" text="Absence Manager">
-         <font>
-            <Font name="Cooper Black" size="42.0" />
-         </font>
-      </Label>
-      <TextField fx:id="lblUsername" layoutX="230.0" layoutY="207.0" promptText="Username" style="-fx-border-style: outset; -fx-border-width: 1; -fx-border-color: green;" />
-      <Button layoutX="423.0" layoutY="207.0" mnemonicParsing="false" onAction="#onLoginBtn" style="-fx-blend-mode: outset; -fx-border-width: 1; -fx-border-color: green;" text="Login" />
-      <CheckBox layoutX="248.0" layoutY="291.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="116.0" text="Remember login" />
-      <Button layoutX="104.0" layoutY="474.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Forgot Login?" />
-      <Label layoutX="216.0" layoutY="322.0" text="We are the best absence program" />
-      <Label layoutX="226.0" layoutY="340.0" text="for students all over the world" />
-      <Label layoutX="243.0" layoutY="115.0" text="CBS COPENHAGEN">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Label>
-      <PasswordField fx:id="lblPassword" layoutX="230.0" layoutY="241.0" prefHeight="26.0" prefWidth="151.0" promptText="Password" style="-fx-blend-mode: outset; -fx-border-radius: 1; -fx-border-color: green;" />
+      <TextField fx:id="lblUsername" layoutX="230.0" layoutY="207.0" promptText="Username" style="-fx-border-style: outset; -fx-border-width: 1; -fx-border-color: green;" AnchorPane.topAnchor="207.0" />
+      <Button layoutX="423.0" layoutY="207.0" mnemonicParsing="false" onAction="#onLoginBtn" style="-fx-blend-mode: outset; -fx-border-width: 1; -fx-border-color: green;" text="Login" AnchorPane.topAnchor="207.0" />
+      <CheckBox layoutX="248.0" layoutY="291.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="116.0" text="Remember login" AnchorPane.topAnchor="291.0" />
+      <Button layoutX="104.0" layoutY="474.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Forgot Login?" AnchorPane.bottomAnchor="100.4" />
+      <Label layoutX="216.0" layoutY="322.0" text="We are the best absence program" AnchorPane.topAnchor="322.0" />
+      <Label layoutX="226.0" layoutY="340.0" text="for students all over the world" AnchorPane.topAnchor="322.0" />
+      <PasswordField fx:id="lblPassword" layoutX="230.0" layoutY="241.0" prefHeight="26.0" prefWidth="151.0" promptText="Password" style="-fx-blend-mode: outset; -fx-border-radius: 1; -fx-border-color: green;" AnchorPane.topAnchor="241.0" />
+      <ImageView disable="true" fitHeight="107.0" fitWidth="179.0" layoutX="216.0" layoutY="85.0" AnchorPane.topAnchor="85.0">
+         <image>
+            <Image url="@../img/Frontline.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
