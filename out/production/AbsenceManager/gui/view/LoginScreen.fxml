@@ -31,7 +31,6 @@
             <PasswordField fx:id="lblPassword" layoutX="137.0" layoutY="196.0" prefHeight="26.0" prefWidth="151.0" promptText="Password" style="-fx-blend-mode: outset; -fx-border-radius: 1; -fx-border-color: green;" />
          </children>
       </AnchorPane>
-      <Button layoutX="14.0" layoutY="24.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: rgb(94,150,94); -fx-blend-mode: outset; -fx-border-color: green;" text="Teacher" />
       <Label layoutX="471.0" layoutY="550.0" text="ABM">
          <font>
             <Font size="23.0" />
