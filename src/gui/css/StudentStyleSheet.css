@@ -1,0 +1,13 @@
+
+
+.button{
+    -fx-background-image: url("../img/logo.png");
+    -fx-background-size: 400;
+    -fx-border-color: red;
+    -fx-border-radius: 2;
+
+}
+
+.text-field{
+    
+}
