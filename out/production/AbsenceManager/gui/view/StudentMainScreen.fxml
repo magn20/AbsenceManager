@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorpaneBackground" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" stylesheets="@../css/StudentStyleSheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.LoginController">
+<AnchorPane fx:id="anchorpaneBackground" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" stylesheets="@../css/StudentStyleSheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.StudentMainController">
    <children>
       <AnchorPane layoutX="93.0" layoutY="50.0" prefHeight="462.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-blend-mode: overlay; -fx-border-width: 2;" stylesheets="@../css/StyleSheet.css" />
       <Label layoutX="500.0" layoutY="555.0" text="FT" AnchorPane.bottomAnchor="10.600000000000001" AnchorPane.rightAnchor="76.0">
@@ -31,17 +31,22 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Button layoutX="129.0" layoutY="254.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="365.0" text="Absence">
+      <Button layoutX="129.0" layoutY="445.0" mnemonicParsing="false" onAction="#onLogoutBtn" prefHeight="40.0" prefWidth="366.0" text="Logout" wrapText="true">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button layoutX="129.0" layoutY="328.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="365.0" text="Schedule">
+      <Button layoutX="129.0" layoutY="257.0" mnemonicParsing="false" onAction="#onAbsenceBtn" prefHeight="40.0" prefWidth="365.0" text="Absence">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button layoutX="129.0" layoutY="403.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="365.0" text="Settings">
+      <Button layoutX="129.0" layoutY="319.0" mnemonicParsing="false" onAction="#onScheduleBtn" prefHeight="40.0" prefWidth="366.0" text="Schedule">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="128.0" layoutY="382.0" mnemonicParsing="false" onAction="#onSettingsBtn" prefHeight="40.0" prefWidth="366.0" text="Settings">
          <font>
             <Font size="20.0" />
          </font>

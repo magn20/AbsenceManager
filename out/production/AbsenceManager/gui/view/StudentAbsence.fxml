@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" stylesheets="@../css/StudentStyleSheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.test">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" stylesheets="@../css/StudentStyleSheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.StudentAbsenceController">
    <children>
       <AnchorPane layoutX="93.0" layoutY="50.0" prefHeight="462.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-blend-mode: overlay; -fx-border-width: 2;" />
       <Label layoutX="471.0" layoutY="550.0" text="ABM">
@@ -22,7 +22,7 @@
          </image>
       </ImageView>
       <Label fx:id="lblDate" layoutX="224.0" layoutY="235.0" text="Wed Feb 02 06:31:53 CET 2022" />
-      <Button layoutX="199.0" layoutY="264.0" mnemonicParsing="false" prefHeight="118.0" prefWidth="214.0" text="Attend">
+      <Button fx:id="btnAttend" layoutX="199.0" layoutY="264.0" mnemonicParsing="false" onAction="#onAttendBtn" prefHeight="118.0" prefWidth="214.0" text="Attend">
          <font>
             <Font name="Corbel" size="27.0" />
          </font>
