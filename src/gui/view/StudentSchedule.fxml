@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.StudentScheduleController">
+   <children>
+      <AnchorPane layoutX="93.0" layoutY="50.0" prefHeight="462.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-blend-mode: overlay; -fx-border-width: 2;" />
+      <Label layoutX="471.0" layoutY="550.0" text="ABM">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="520.0" layoutY="560.0" text="Enterprise" />
+      <ImageView blendMode="OVERLAY" fitHeight="600.0" fitWidth="600.0">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDate" layoutX="241.0" layoutY="202.0" text="Wed Feb 02 06:31:53 CET 2022" />
+      <TableView fx:id="tvTime" layoutX="116.0" layoutY="237.0" prefHeight="240.0" prefWidth="107.0">
+        <columns>
+          <TableColumn fx:id="tcTime" prefWidth="100.0" text="Time" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tvSubject" layoutX="217.0" layoutY="237.0" prefHeight="240.0" prefWidth="278.0">
+        <columns>
+          <TableColumn fx:id="tcSubject" prefWidth="192.80001220703124" text="Subjects" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="119.0" fitWidth="200.0" layoutX="212.0" layoutY="85.0" AnchorPane.topAnchor="85.0">
+         <image>
+            <Image url="@../img/Frontline.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

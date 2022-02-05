@@ -13,7 +13,7 @@ import java.net.URL;
 import java.util.Date;
 import java.util.ResourceBundle;
 
-public class StudentController implements Initializable {
+public class StudentScheduleController implements Initializable {
     @FXML
     private TableView<Subject> tvSubject;
     @FXML
@@ -33,7 +33,7 @@ public class StudentController implements Initializable {
 
     Date date = new Date();
 
-    public StudentController (){
+    public StudentScheduleController(){
 
     }
 

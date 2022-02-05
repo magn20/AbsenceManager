@@ -38,7 +38,7 @@ public class LoginController {
 
             SceneSwapper sceneSwapper = new SceneSwapper();
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-            sceneSwapper.sceneSwitch(stage, "StudentScreen.fxml");
+            sceneSwapper.sceneSwitch(stage, "StudentMainScreen.fxml");
         }
     }
 }
