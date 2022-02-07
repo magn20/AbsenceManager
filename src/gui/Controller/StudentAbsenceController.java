@@ -32,7 +32,7 @@ public class StudentAbsenceController implements Initializable {
 
 
     public void onBackBtn(ActionEvent actionEvent) throws IOException {
-        
+
         SceneSwapper sceneSwapper = new SceneSwapper();
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         sceneSwapper.sceneSwitch(stage, "StudentMainScreen.fxml");
