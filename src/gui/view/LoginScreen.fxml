@@ -25,7 +25,7 @@
          </image>
       </ImageView>
       <TextField fx:id="lblUsername" layoutX="177.0" layoutY="204.0" prefHeight="34.0" prefWidth="203.0" promptText="Username" AnchorPane.topAnchor="204.0" />
-      <Button layoutX="409.0" layoutY="205.0" mnemonicParsing="false" onAction="#onLoginBtn" prefHeight="32.0" prefWidth="90.0" text="Login" AnchorPane.topAnchor="205.0" />
+      <Button layoutX="409.0" layoutY="205.0" mnemonicParsing="false" onAction="#onLoginBtn" prefHeight="32.0" prefWidth="90.0" text="Login" textFill="WHITE" AnchorPane.topAnchor="205.0" />
       <CheckBox layoutX="380.0" layoutY="479.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="129.0" text="Remember login" AnchorPane.topAnchor="479.0" />
       <PasswordField fx:id="lblPassword" layoutX="177.0" layoutY="264.0" prefHeight="34.0" prefWidth="203.0" promptText="Password" AnchorPane.topAnchor="264.0" />
       <ImageView disable="true" fitHeight="107.0" fitWidth="179.0" layoutX="216.0" layoutY="85.0" AnchorPane.topAnchor="85.0">
