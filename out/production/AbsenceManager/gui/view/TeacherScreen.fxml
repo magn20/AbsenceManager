@@ -5,36 +5,40 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.test">
    <children>
-      <AnchorPane layoutX="93.0" layoutY="50.0" prefHeight="462.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-blend-mode: overlay; -fx-border-width: 2;">
-         <children>
-            <Label layoutX="29.0" layoutY="31.0" text="Absence Manager">
-               <font>
-                  <Font name="Cooper Black" size="42.0" />
-               </font>
-            </Label>
-            <ComboBox layoutX="29.0" layoutY="100.0" prefHeight="26.0" prefWidth="70.0" promptText="Class" />
-            <ComboBox layoutX="117.0" layoutY="100.0" prefHeight="26.0" prefWidth="82.0" promptText="Subject" />
-            <ComboBox layoutX="213.0" layoutY="100.0" prefHeight="26.0" prefWidth="92.0" promptText="Student" />
-            <Button layoutX="346.0" layoutY="100.0" mnemonicParsing="false" text="Check" />
-            <TableView layoutX="29.0" layoutY="131.0" prefHeight="310.0" prefWidth="369.0">
-              <columns>
-                <TableColumn prefWidth="163.20001220703125" text="Student" />
-                <TableColumn prefWidth="113.60003662109375" text="Hours" />
-                  <TableColumn prefWidth="90.39998779296877" text="Procent" />
-              </columns>
-            </TableView>
-         </children>
-      </AnchorPane>
+      <AnchorPane layoutX="93.0" layoutY="50.0" prefHeight="462.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-blend-mode: overlay; -fx-border-width: 2;" />
       <Label layoutX="471.0" layoutY="550.0" text="ABM">
          <font>
             <Font size="23.0" />
          </font>
       </Label>
       <Label layoutX="520.0" layoutY="560.0" text="Enterprise" />
+      <ImageView blendMode="OVERLAY" fitHeight="600.0" fitWidth="600.0">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+      <TableView layoutX="121.0" layoutY="235.0" prefHeight="256.0" prefWidth="370.0">
+        <columns>
+          <TableColumn prefWidth="163.20001220703125" text="Student" />
+          <TableColumn prefWidth="113.60003662109375" text="Hours" />
+            <TableColumn prefWidth="90.39998779296877" text="Procent" />
+        </columns>
+      </TableView>
+      <ComboBox layoutX="121.0" layoutY="198.0" prefHeight="26.0" prefWidth="82.0" promptText="Class" />
+      <ComboBox layoutX="306.0" layoutY="198.0" prefHeight="26.0" prefWidth="92.0" promptText="Student" />
+      <ComboBox layoutX="214.0" layoutY="198.0" prefHeight="26.0" prefWidth="82.0" promptText="Subject" />
+      <Button layoutX="447.0" layoutY="198.0" mnemonicParsing="false" text="Check" />
+      <ImageView fitHeight="119.0" fitWidth="200.0" layoutX="211.0" layoutY="63.0">
+         <image>
+            <Image url="@../img/Frontline.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
