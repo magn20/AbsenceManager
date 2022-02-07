@@ -36,7 +36,7 @@
             <Font size="20.0" />
          </font>
       </Button>
-      <Button layoutX="129.0" layoutY="257.0" mnemonicParsing="false" onAction="#onAbsenceBtn" prefHeight="40.0" prefWidth="365.0" text="Absence" textFill="WHITE">
+      <Button layoutX="129.0" layoutY="257.0" mnemonicParsing="false" onAction="#onAbsenceBtn" prefHeight="40.0" prefWidth="365.0" text="Check in" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
@@ -46,7 +46,7 @@
             <Font size="20.0" />
          </font>
       </Button>
-      <Button layoutX="128.0" layoutY="382.0" mnemonicParsing="false" onAction="#onSettingsBtn" prefHeight="40.0" prefWidth="366.0" text="Settings" textFill="WHITE">
+      <Button layoutX="128.0" layoutY="382.0" mnemonicParsing="false" onAction="#onSettingsBtn" prefHeight="40.0" prefWidth="366.0" text="Absence" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
