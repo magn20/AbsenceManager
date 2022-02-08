@@ -30,8 +30,7 @@ public class StudentScheduleController implements Initializable {
 
     ObservableList<SubjectTime> allTimes = FXCollections.observableArrayList();
     ObservableList<Subject> allSubjects = FXCollections.observableArrayList();
-
-    Date date = new Date();
+    
 
     public StudentScheduleController(){
 
@@ -42,9 +41,6 @@ public class StudentScheduleController implements Initializable {
         setTimeTable();
         setSubjectTable();
 
-
-        //show the todays date
-        lblDate.setText(date.toString());
 
     }
 
