@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" stylesheets="@../css/StudentStyleSheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.StudentAbsenceController">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" stylesheets="@../css/StudentStyleSheet.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.StudentAbsenceController">
    <children>
       <AnchorPane layoutX="93.0" layoutY="50.0" prefHeight="462.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-blend-mode: overlay; -fx-border-width: 2;" />
       <Label layoutX="496.0" layoutY="548.0" text="FL">
@@ -32,7 +32,7 @@
             <Image url="@../img/Frontline.png" />
          </image>
       </ImageView>
-      <Button layoutX="199.0" layoutY="400.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="214.0" text="back" textFill="WHITE">
+      <Button layoutX="199.0" layoutY="400.0" mnemonicParsing="false" onAction="#onBackBtn" prefHeight="34.0" prefWidth="214.0" text="back" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
