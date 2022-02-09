@@ -30,7 +30,8 @@ public class StudentScheduleController implements Initializable {
 
     ObservableList<SubjectTime> allTimes = FXCollections.observableArrayList();
     ObservableList<Subject> allSubjects = FXCollections.observableArrayList();
-    
+
+    Date date = new Date();
 
     public StudentScheduleController(){
 
@@ -40,7 +41,7 @@ public class StudentScheduleController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         setTimeTable();
         setSubjectTable();
-
+        
 
     }
 
