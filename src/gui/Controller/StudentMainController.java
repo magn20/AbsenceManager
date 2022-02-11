@@ -26,7 +26,7 @@ public class StudentMainController {
 
     }
 
-    public void onLogoutBtn(ActionEvent actionEvent) throws IOException {   
+    public void onLogoutBtn(ActionEvent actionEvent) throws IOException {
         SceneSwapper sceneSwapper = new SceneSwapper();
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         sceneSwapper.sceneSwitch(stage, "LoginScreen.fxml");

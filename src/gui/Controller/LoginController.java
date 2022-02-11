@@ -2,6 +2,7 @@ package gui.Controller;
 
 import gui.util.SceneSwapper;
 import javafx.event.ActionEvent;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -10,9 +11,11 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.Locale;
+import java.util.ResourceBundle;
 
-public class LoginController {
+public class LoginController implements Initializable {
 
     public TextField lblUsername;
     public TextField lblPassword;
@@ -40,5 +43,13 @@ public class LoginController {
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             sceneSwapper.sceneSwitch(stage, "StudentMainScreen.fxml");
         }
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        imgBackground.fitWidthProperty().bind(anchorpaneBackground.widthProperty());
+        imgBackground.fitHeightProperty().bind(anchorpaneBackground.heightProperty());
+
+
     }
 }
