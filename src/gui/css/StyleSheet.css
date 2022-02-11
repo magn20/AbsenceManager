@@ -9,7 +9,7 @@
     -fx-border-radius: 0;
     -fx-border-color: #ff0062;
 }
-
+hans
 .text-field:focused{
     -fx-border-color: #0030ef;
 }
@@ -18,7 +18,4 @@
     -fx-background-radius: 40;
     -fx-background-color: #ff0062;
 }
-.AnchorPane{
-    -fx-border-color: red;
-    -fx-alignment: center;
-}
+
