@@ -2,6 +2,9 @@ package gui.Controller;
 
 import be.Student;
 import be.Subject;
+import bll.CLassManager;
+import bll.StudentManager;
+import dal.StudentDao;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -42,38 +45,27 @@ public class TeacherController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        cbClass.getItems().add("all Classes");
-     cbClass.getItems().add("cs21_A");
-     cbClass.getItems().add("cs22_A");
-     cbClass.getItems().add("mm21_b");
-     cbClass.getItems().add("mm18_c");
 
-     cbClass.getSelectionModel().select(3);
+     cbClass.getItems().add("all Classes");
+        CLassManager cLassManager = new CLassManager();
+        cbClass.getItems().addAll(cLassManager.getClasses());
 
      cbSubject.getItems().add("all Subjects");
      cbSubject.getItems().add("English");
      cbSubject.getItems().add("Media");
      cbSubject.getItems().add("Programming");
-     cbSubject.getItems().add("Fun With Lars");
 
-     cbSubject.getSelectionModel().select(3);
-
+     StudentManager studentManager = new StudentManager();
 
         ObservableList<Student> students = FXCollections.observableArrayList();
 
-
-        students.add(new Student("hans", "40/55","80%"));
-        students.add(new Student("peter", "44/55","80%"));
-        students.add(new Student("jens", "54/55","99%"));
-        students.add(new Student("mathilde", "24/55","45%"));
-        students.add(new Student("karoline", "44/55","45%"));
-        students.add(new Student("Anders", "23/55","55%"));
-
+        students.addAll(studentManager.getStudents());
 
         cbStudent.getItems().add("All Students");
+
          students.forEach((student -> cbStudent.getItems().add(student.getName())));
 
-         cbStudent.getSelectionModel().select(0);
+
 
          tcStudent.setCellValueFactory(new PropertyValueFactory<Student, String>("name"));
          tcHours.setCellValueFactory(new PropertyValueFactory<Student, String>("hours"));
