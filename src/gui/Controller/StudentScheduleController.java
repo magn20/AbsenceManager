@@ -1,6 +1,7 @@
 package gui.Controller;
 import be.Subject;
 import be.SubjectTime;
+import bll.SubjectManager;
 import gui.util.SceneSwapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -54,12 +55,8 @@ public class StudentScheduleController implements Initializable {
     public void setSubjectTable(){
         tcSubject.setCellValueFactory(new PropertyValueFactory<Subject, String>("name"));
 
-        allSubjects.add(new Subject("English"));
-        allSubjects.add(new Subject("English"));
-        allSubjects.add(new Subject("German"));
-        allSubjects.add(new Subject("German"));
-        allSubjects.add(new Subject("French"));
-        allSubjects.add(new Subject("French"));
+        SubjectManager subjectManager = new SubjectManager();
+        allSubjects.addAll(subjectManager.todaysSubject());
 
         tvSubject.setItems(allSubjects);
     }

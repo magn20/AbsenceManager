@@ -1,10 +1,13 @@
 package gui.Controller;
 
+import be.Class;
 import be.Student;
 import be.Subject;
 import bll.CLassManager;
 import bll.StudentManager;
+import bll.SubjectManager;
 import dal.StudentDao;
+import dal.SubjectDao;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -17,6 +20,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class TeacherController implements Initializable {
@@ -46,15 +50,24 @@ public class TeacherController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-     cbClass.getItems().add("all Classes");
+
+        // Adds all classes teacher has to combobox
+        cbClass.getItems().add("all Classes");
         CLassManager cLassManager = new CLassManager();
-        cbClass.getItems().addAll(cLassManager.getClasses());
+        List<Class> classes = FXCollections.observableArrayList();
+        classes = cLassManager.getClasses();
+        classes.forEach( (classs -> cbClass.getItems().add(classs.getName())));
 
+
+        // add all subjects that teacher has
      cbSubject.getItems().add("all Subjects");
-     cbSubject.getItems().add("English");
-     cbSubject.getItems().add("Media");
-     cbSubject.getItems().add("Programming");
+        SubjectManager subjectManager = new SubjectManager();
+        List<Subject> subjectList = FXCollections.observableArrayList();
+        subjectList = subjectManager.subjectList();
+        subjectList.forEach( (subject -> cbSubject.getItems().add(subject.getName())));
 
+
+     // add all Students for that CLass
      StudentManager studentManager = new StudentManager();
 
         ObservableList<Student> students = FXCollections.observableArrayList();
@@ -66,7 +79,7 @@ public class TeacherController implements Initializable {
          students.forEach((student -> cbStudent.getItems().add(student.getName())));
 
 
-
+         // displays all the students in the tableview
          tcStudent.setCellValueFactory(new PropertyValueFactory<Student, String>("name"));
          tcHours.setCellValueFactory(new PropertyValueFactory<Student, String>("hours"));
          tcProcent.setCellValueFactory(new PropertyValueFactory<Student, String>("percent"));
