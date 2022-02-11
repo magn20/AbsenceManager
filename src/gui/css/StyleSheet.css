@@ -9,7 +9,7 @@
     -fx-border-radius: 0;
     -fx-border-color: #ff0062;
 }
-hans
+
 .text-field:focused{
     -fx-border-color: #0030ef;
 }
