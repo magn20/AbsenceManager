@@ -6,20 +6,21 @@ import be.Subject;
 import bll.CLassManager;
 import bll.StudentManager;
 import bll.SubjectManager;
-import dal.StudentDao;
-import dal.SubjectDao;
+import gui.util.SceneSwapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -85,6 +86,13 @@ public class TeacherController implements Initializable {
          tcProcent.setCellValueFactory(new PropertyValueFactory<Student, String>("percent"));
 
          tvStudents.setItems(students);
+
+    }
+
+    public void onLogoutBtn(ActionEvent actionEvent) throws IOException {
+        SceneSwapper sceneSwapper = new SceneSwapper();
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        sceneSwapper.sceneSwitch(stage, "LoginScreen.fxml");
 
     }
 }

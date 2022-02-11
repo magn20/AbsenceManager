@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.TeacherController">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" stylesheets="@../css/TeacherStyle.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.TeacherController">
    <children>
       <AnchorPane layoutX="93.0" layoutY="50.0" prefHeight="462.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-blend-mode: overlay; -fx-border-width: 2;" />
       <Label layoutX="493.0" layoutY="548.0" text="FL">
@@ -24,21 +24,23 @@
             <Image url="@../img/logo.png" />
          </image>
       </ImageView>
-      <TableView fx:id="tvStudents" layoutX="121.0" layoutY="235.0" prefHeight="256.0" prefWidth="370.0">
+
+      <TableView fx:id="tvStudents" layoutX="121.0" layoutY="215.0" prefHeight="256.0" prefWidth="370.0">
         <columns>
           <TableColumn fx:id="tcStudent" prefWidth="163.20001220703125" text="Student" />
           <TableColumn fx:id="tcHours" prefWidth="113.60003662109375" text="Hours" />
             <TableColumn fx:id="tcProcent" prefWidth="90.39998779296877" text="Procent" />
         </columns>
       </TableView>
-      <ComboBox fx:id="cbClass" layoutX="121.0" layoutY="198.0" prefHeight="26.0" prefWidth="82.0" promptText="Class" />
-      <ComboBox fx:id="cbStudent" layoutX="306.0" layoutY="198.0" prefHeight="26.0" prefWidth="92.0" promptText="Student" />
-      <ComboBox fx:id="cbSubject" layoutX="214.0" layoutY="198.0" prefHeight="26.0" prefWidth="82.0" promptText="Subject" />
-      <Button layoutX="442.0" layoutY="198.0" mnemonicParsing="false" onAction="#onGraph" text="Graph" />
+      <ComboBox fx:id="cbClass" layoutX="121.0" layoutY="182.0" prefHeight="26.0" prefWidth="82.0" promptText="Class" />
+      <ComboBox fx:id="cbStudent" layoutX="306.0" layoutY="182.0" prefHeight="26.0" prefWidth="92.0" promptText="Student" />
+      <ComboBox fx:id="cbSubject" layoutX="211.0" layoutY="182.0" prefHeight="26.0" prefWidth="82.0" promptText="Subject" />
+      <Button layoutX="442.0" layoutY="182.0" mnemonicParsing="false" onAction="#onGraph" text="Graph" textFill="WHITE" />
       <ImageView fitHeight="119.0" fitWidth="200.0" layoutX="211.0" layoutY="63.0">
          <image>
             <Image url="@../img/Frontline.png" />
          </image>
       </ImageView>
+      <Button layoutX="444.0" layoutY="479.0" mnemonicParsing="false" onAction="#onLogoutBtn" text="Logout" textFill="WHITE" />
    </children>
 </AnchorPane>
