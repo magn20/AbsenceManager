@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.TeacherController">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" stylesheets="@../css/TeacherStyle.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.TeacherController">
    <children>
-      <AnchorPane layoutX="93.0" layoutY="50.0" prefHeight="462.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-blend-mode: overlay; -fx-border-width: 2;" stylesheets="@../css/TeacherStyle.css" />
+      <AnchorPane layoutX="93.0" layoutY="50.0" prefHeight="462.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-blend-mode: overlay; -fx-border-width: 2;" />
       <Label layoutX="493.0" layoutY="548.0" text="FL">
          <font>
             <Font size="23.0" />
@@ -41,5 +41,6 @@
             <Image url="@../img/Frontline.png" />
          </image>
       </ImageView>
+      <Button layoutX="444.0" layoutY="479.0" mnemonicParsing="false" onAction="#onLogoutBtn" text="Logout" textFill="WHITE" />
    </children>
 </AnchorPane>
