@@ -41,6 +41,7 @@ public class PieChartController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         borderPane.setCenter(buildPieChart());
+
     }
     
 
