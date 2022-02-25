@@ -33,7 +33,7 @@ public class StudentAbsenceCheckerController implements Initializable {
         ObservableList<PieChart.Data> pieChartData =
                 FXCollections.observableArrayList(
                         new PieChart.Data("Absence", 24),
-                        new PieChart.Data("present", 70),
+                        new PieChart.Data("Present", 70),
                         new PieChart.Data("Allowed Absence", 10));
 
         absenceChart.setData(pieChartData);
