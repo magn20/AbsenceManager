@@ -34,6 +34,7 @@ public class LoginController implements Initializable {
 
             SceneSwapper sceneSwapper = new SceneSwapper();
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            stage.setResizable(false);
             sceneSwapper.sceneSwitch(stage, "TeacherScreen.fxml");
         }
 
@@ -41,6 +42,7 @@ public class LoginController implements Initializable {
 
             SceneSwapper sceneSwapper = new SceneSwapper();
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            stage.setResizable(false);
             sceneSwapper.sceneSwitch(stage, "StudentMainScreen.fxml");
         }
     }

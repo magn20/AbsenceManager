@@ -22,6 +22,7 @@ public class StudentAbsenceCheckerController implements Initializable {
     public void onBackBtn(ActionEvent actionEvent) throws IOException {
         SceneSwapper sceneSwapper = new SceneSwapper();
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setResizable(false);
         sceneSwapper.sceneSwitch(stage, "StudentMainScreen.fxml");
 
     }

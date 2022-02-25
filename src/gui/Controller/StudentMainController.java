@@ -12,6 +12,7 @@ public class StudentMainController {
 
         SceneSwapper sceneSwapper = new SceneSwapper();
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setResizable(false);
         sceneSwapper.sceneSwitch(stage, "StudentAbsence.fxml");
 
     }
@@ -19,18 +20,21 @@ public class StudentMainController {
     public void onScheduleBtn(ActionEvent actionEvent) throws IOException {
         SceneSwapper sceneSwapper = new SceneSwapper();
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setResizable(false);
         sceneSwapper.sceneSwitch(stage, "StudentSchedule.fxml");
     }
 
     public void onSettingsBtn(ActionEvent actionEvent) throws IOException {
         SceneSwapper sceneSwapper = new SceneSwapper();
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setResizable(false);
         sceneSwapper.sceneSwitch(stage, "StudentAbsenceChecker.fxml");
     }
 
     public void onLogoutBtn(ActionEvent actionEvent) throws IOException {
         SceneSwapper sceneSwapper = new SceneSwapper();
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setResizable(false);
         sceneSwapper.sceneSwitch(stage, "LoginScreen.fxml");
 
     }

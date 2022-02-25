@@ -27,16 +27,11 @@
             <Image url="@../img/Frontline.png" />
          </image>
       </ImageView>
-      <Button layoutX="206.0" layoutY="417.0" mnemonicParsing="false" onAction="#onBackBtn" prefHeight="34.0" prefWidth="214.0" text="back" textFill="WHITE">
+      <Button layoutX="199.0" layoutY="447.0" mnemonicParsing="false" onAction="#onBackBtn" prefHeight="34.0" prefWidth="214.0" text="back" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
       <PieChart fx:id="absenceChart" layoutX="106.0" layoutY="132.0" prefHeight="298.0" prefWidth="414.0" style="-fx-background-position: center;" />
-      <Label layoutX="278.0" layoutY="193.0" text="Absence">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
    </children>
 </AnchorPane>

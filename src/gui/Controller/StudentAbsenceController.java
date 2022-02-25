@@ -35,6 +35,7 @@ public class StudentAbsenceController implements Initializable {
 
         SceneSwapper sceneSwapper = new SceneSwapper();
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setResizable(false);
         sceneSwapper.sceneSwitch(stage, "StudentMainScreen.fxml");
     }
 }

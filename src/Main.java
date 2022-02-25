@@ -17,6 +17,7 @@ public class Main extends Application {
         fxmlLoaderMain = new FXMLLoader(getClass().getResource("./gui/view/LoginScreen.fxml"));
         primaryStage.centerOnScreen();
         Scene scene = new Scene(fxmlLoaderMain.load());
+        primaryStage.setResizable(false);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Absence Manager");
         //      Image image = new Image("gui/Images/icon.png");

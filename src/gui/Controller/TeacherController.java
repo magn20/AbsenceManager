@@ -92,6 +92,7 @@ public class TeacherController implements Initializable {
     public void onLogoutBtn(ActionEvent actionEvent) throws IOException {
         SceneSwapper sceneSwapper = new SceneSwapper();
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setResizable(false);
         sceneSwapper.sceneSwitch(stage, "LoginScreen.fxml");
 
     }
