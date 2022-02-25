@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #85b785;" stylesheets="@../css/StudentStyleSheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller.StudentAbsenceCheckerController">
+   <children>
+      <AnchorPane layoutX="93.0" layoutY="50.0" prefHeight="462.0" prefWidth="426.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-blend-mode: overlay; -fx-border-width: 2;" />
+      <Label layoutX="496.0" layoutY="548.0" text="FL">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="520.0" layoutY="560.0" text="Education" />
+      <ImageView blendMode="OVERLAY" fitHeight="600.0" fitWidth="600.0">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="119.0" fitWidth="200.0" layoutX="206.0" layoutY="86.0" AnchorPane.topAnchor="85.0">
+         <image>
+            <Image url="@../img/Frontline.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="199.0" layoutY="447.0" mnemonicParsing="false" onAction="#onBackBtn" prefHeight="34.0" prefWidth="214.0" text="back" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <PieChart fx:id="absenceChart" layoutX="106.0" layoutY="132.0" prefHeight="298.0" prefWidth="414.0" style="-fx-background-position: center;" />
+   </children>
+</AnchorPane>

@@ -22,8 +22,10 @@ public class StudentMainController {
         sceneSwapper.sceneSwitch(stage, "StudentSchedule.fxml");
     }
 
-    public void onSettingsBtn(ActionEvent actionEvent) {
-
+    public void onSettingsBtn(ActionEvent actionEvent) throws IOException {
+        SceneSwapper sceneSwapper = new SceneSwapper();
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        sceneSwapper.sceneSwitch(stage, "StudentAbsenceChecker.fxml");
     }
 
     public void onLogoutBtn(ActionEvent actionEvent) throws IOException {
