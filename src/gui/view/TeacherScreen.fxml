@@ -35,12 +35,11 @@
       <ComboBox fx:id="cbClass" layoutX="121.0" layoutY="182.0" prefHeight="26.0" prefWidth="82.0" promptText="Class" />
       <ComboBox fx:id="cbStudent" layoutX="306.0" layoutY="182.0" prefHeight="26.0" prefWidth="92.0" promptText="Student" />
       <ComboBox fx:id="cbSubject" layoutX="211.0" layoutY="182.0" prefHeight="26.0" prefWidth="82.0" promptText="Subject" />
-      <Button layoutX="442.0" layoutY="182.0" mnemonicParsing="false" onAction="#onGraph" text="Graph" textFill="WHITE" />
       <ImageView fitHeight="119.0" fitWidth="200.0" layoutX="211.0" layoutY="63.0">
          <image>
             <Image url="@../img/Frontline.png" />
          </image>
       </ImageView>
-      <Button layoutX="444.0" layoutY="479.0" mnemonicParsing="false" onAction="#onLogoutBtn" text="Logout" textFill="WHITE" />
+      <Button layoutX="436.0" layoutY="480.0" mnemonicParsing="false" onAction="#onLogoutBtn" text="Logout" textFill="WHITE" />
    </children>
 </AnchorPane>
