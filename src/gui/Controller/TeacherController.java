@@ -1,7 +1,11 @@
 package gui.Controller;
 
+import be.Class;
 import be.Student;
 import be.Subject;
+import bll.CLassManager;
+import bll.StudentManager;
+import bll.SubjectManager;
 import gui.util.SceneSwapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -17,7 +21,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class TeacherController implements Initializable {
@@ -46,39 +50,37 @@ public class TeacherController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+
+        // Adds all classes teacher has to combobox
         cbClass.getItems().add("all Classes");
-     cbClass.getItems().add("cs21_A");
-     cbClass.getItems().add("cs22_A");
-     cbClass.getItems().add("mm21_b");
-     cbClass.getItems().add("mm18_c");
+        CLassManager cLassManager = new CLassManager();
+        List<Class> classes = FXCollections.observableArrayList();
+        classes = cLassManager.getClasses();
+        classes.forEach( (classs -> cbClass.getItems().add(classs.getName())));
 
-     cbClass.getSelectionModel().select(3);
 
+        // add all subjects that teacher has
      cbSubject.getItems().add("all Subjects");
-     cbSubject.getItems().add("English");
-     cbSubject.getItems().add("Media");
-     cbSubject.getItems().add("Programming");
-     cbSubject.getItems().add("Fun With Lars");
+        SubjectManager subjectManager = new SubjectManager();
+        List<Subject> subjectList = FXCollections.observableArrayList();
+        subjectList = subjectManager.subjectList();
+        subjectList.forEach( (subject -> cbSubject.getItems().add(subject.getName())));
 
-     cbSubject.getSelectionModel().select(3);
 
+     // add all Students for that CLass
+     StudentManager studentManager = new StudentManager();
 
         ObservableList<Student> students = FXCollections.observableArrayList();
 
-
-        students.add(new Student("hans", "40/55","80%"));
-        students.add(new Student("peter", "44/55","80%"));
-        students.add(new Student("jens", "54/55","99%"));
-        students.add(new Student("mathilde", "24/55","45%"));
-        students.add(new Student("karoline", "44/55","45%"));
-        students.add(new Student("Anders", "23/55","55%"));
-
+        students.addAll(studentManager.getStudents());
 
         cbStudent.getItems().add("All Students");
+
          students.forEach((student -> cbStudent.getItems().add(student.getName())));
 
-         cbStudent.getSelectionModel().select(0);
 
+         // displays all the students in the tableview
          tcStudent.setCellValueFactory(new PropertyValueFactory<Student, String>("name"));
          tcHours.setCellValueFactory(new PropertyValueFactory<Student, String>("hours"));
          tcProcent.setCellValueFactory(new PropertyValueFactory<Student, String>("percent"));
